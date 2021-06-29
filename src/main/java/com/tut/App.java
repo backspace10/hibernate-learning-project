@@ -19,7 +19,7 @@ public class App {
 		System.out.println("Project Started");
 
 		// Configuration cfg = new Configuration();
-		// cfg.configure();
+		// cfg.configure("hibernate.cfg.xml");
 		// SessionFactory factory = cfg.buildSessionFactory();
 
 		// or
