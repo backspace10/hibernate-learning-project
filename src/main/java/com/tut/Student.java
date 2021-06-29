@@ -5,11 +5,13 @@ import javax.persistence.Id;
 
 @Entity
 public class Student {
-	
+
 	@Id
 	private int sid;
 	private String name;
 	private String city;
+
+	private Certificate certi;
 
 	public Student(int sid, String name, String city) {
 		super();
@@ -46,12 +48,18 @@ public class Student {
 		this.city = city;
 	}
 
+	public Certificate getCerti() {
+		return certi;
+	}
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.sid+" : "+this.name+" : "+this.city;
+		return this.sid + " : " + this.name + " : " + this.city;
 	}
-	
-	
 
 }
